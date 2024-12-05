@@ -6,6 +6,7 @@ import { PricingPlans } from "./component/pricing_plan";
 import { PopularDestinations } from "./component/popular_destination";
 import { Card } from "./component/card";
 import { Button } from "./component/header_button";
+import { NewPricing } from "./component/new_pricing";
 
 export default function Home() {
     return (
@@ -47,6 +48,7 @@ export default function Home() {
                 />
             </PopularDestinations>
             <PricingPlans/>
+            <NewPricing/>
             <ContactUs/>
             <Footer/>
         </> 

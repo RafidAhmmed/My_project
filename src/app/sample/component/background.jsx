@@ -2,7 +2,7 @@ export function Background() {
     return (
         <div style={{backgroundImage: "url('./sea.jpg')", backgroundSize: "cover", backgroundPosition: "center",}}
             className="h-[500px] md:h-[650px] text-5xl">
-            <div className="bg-black h-full w-full bg-opacity-60 flex flex-col justify-center items-center">
+            <div id="home" className="bg-black h-full w-full bg-opacity-60 flex flex-col justify-center items-center">
                 <h1 className="text-white text-5xl md:text-7xl tracking-wide pb-5 font-bold text-center">
                     Discover Your Next Adventure
                 </h1>

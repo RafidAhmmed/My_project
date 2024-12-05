@@ -20,7 +20,7 @@ export default function Home() {
                     link="#destination"
                 />
                 <Button
-                    title="Pricing"
+                    title="Price"
                     link="#pricing"    
                 />
                 <Button

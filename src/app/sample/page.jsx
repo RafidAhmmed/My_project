@@ -1,34 +1,106 @@
-import { Product } from "./component/product";
-import { Exam_props } from "./component/exam_props";
+"use client";
+import {Input} from "./component/input";
+import React,{useState} from "react";
 
-export default function Exam() {
-    return (
+export default function Page(){
+    const [inputfirstvalue, setFirstInputValue] = useState('');
+    const firsthandleInputchange = (event) => {
+        setFirstInputValue(event.target.value);
+    };
+
+    const [inputlastvalue, setLastInputValue] = useState('');
+    const lasthandleInputchange = (event) => {
+        setLastInputValue(event.target.value);
+    };
+
+    const [inputemailvalue, setInputEmailValue] = useState('');
+    const mailhandleInputchange = (event) => {
+        setInputEmailValue(event.target.value);
+    };
+
+    return(
         <>
-            <Product>
-                <Exam_props
-                    name="Laptop"
-                    price="999"
-                    description="A high-performance laptop for all your computing needs"
-                />
-                <Exam_props
-                    name="Smartphone"
-                    price="499"
-                    description="Stay connected with the latest technology in your hand"
-                />
-                <Exam_props
-                    name="Headphones"
-                    price="199"
-                    description="Experience high-quality sound with noise cancellation"
-                />
-                <Exam_props
-                    name="Smartwatch"
-                    price="299"
-                    description="Track your health and notifications on the go"
-                />
-            </Product>
-        </> 
+        <p className="text-lg pt-2 pl-6">Form</p>
+        <Input 
+        place_holder={"Enter your first_name"}
+        type={"text"}
+        value={inputfirstvalue}
+        onchange={firsthandleInputchange}
+        />
+        <Input
+        place_holder={"Enter your last_name"}
+        type={"text"}
+        value={inputlastvalue}
+        onchange={lasthandleInputchange}
+        />
+        <Input
+        place_holder={"Enter your email"}
+        type={"email"}
+        value={inputemailvalue}
+        onchange={mailhandleInputchange}
+        />
+        <Input
+        place_holder={"Confirm your email"}
+        type={"email"}
+        value={inputemailvalue}
+        onchange={mailhandleInputchange}
+        />
+        </>
     )
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import { Product } from "./component/product";
+// import { Exam_props } from "./component/exam_props";
+
+// export default function Exam() {
+//     return (
+//         <>
+//             <Product>
+//                 <Exam_props
+//                     name="Laptop"
+//                     price="999"
+//                     description="A high-performance laptop for all your computing needs"
+//                 />
+//                 <Exam_props
+//                     name="Smartphone"
+//                     price="499"
+//                     description="Stay connected with the latest technology in your hand"
+//                 />
+//                 <Exam_props
+//                     name="Headphones"
+//                     price="199"
+//                     description="Experience high-quality sound with noise cancellation"
+//                 />
+//                 <Exam_props
+//                     name="Smartwatch"
+//                     price="299"
+//                     description="Track your health and notifications on the go"
+//                 />
+//             </Product>
+//         </> 
+//     )
+// }
 
 
 

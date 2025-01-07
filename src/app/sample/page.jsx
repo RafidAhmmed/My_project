@@ -1,53 +1,77 @@
-"use client";
+// "use client";
 import {Input} from "./component/input";
-import React,{useState} from "react";
+// import React,{useState} from "react";
 
 export default function Page(){
-    const [inputfirstvalue, setFirstInputValue] = useState('');
-    const firsthandleInputchange = (event) => {
-        setFirstInputValue(event.target.value);
-    };
-
-    const [inputlastvalue, setLastInputValue] = useState('');
-    const lasthandleInputchange = (event) => {
-        setLastInputValue(event.target.value);
-    };
-
-    const [inputemailvalue, setInputEmailValue] = useState('');
-    const mailhandleInputchange = (event) => {
-        setInputEmailValue(event.target.value);
-    };
-
     return(
         <>
-        <p className="text-lg pt-2 pl-6">Form</p>
-        <Input 
-        place_holder={"Enter your first_name"}
-        type={"text"}
-        value={inputfirstvalue}
-        onchange={firsthandleInputchange}
-        />
-        <Input
-        place_holder={"Enter your last_name"}
-        type={"text"}
-        value={inputlastvalue}
-        onchange={lasthandleInputchange}
-        />
-        <Input
-        place_holder={"Enter your email"}
-        type={"email"}
-        value={inputemailvalue}
-        onchange={mailhandleInputchange}
-        />
-        <Input
-        place_holder={"Confirm your email"}
-        type={"email"}
-        value={inputemailvalue}
-        onchange={mailhandleInputchange}
-        />
+        <Input/>
         </>
-    )
+    );
+
+    
+    // const [isFocused, setFocused] = useState(false);
+
+    // const handleFocus = () => {
+    //     setFocused(true);
+    // };
+
+    // const handleBlur = () => {
+    //     setFocused(false);
+    // };
+
+    
 }
+// 
+// 
+// 
+// 
+// export default function Page(){
+//     const [inputfirstvalue, setFirstInputValue] = useState('');
+//     const firsthandleInputchange = (event) => {
+//         setFirstInputValue(event.target.value);
+//     };
+
+//     const [inputlastvalue, setLastInputValue] = useState('');
+//     const lasthandleInputchange = (event) => {
+//         setLastInputValue(event.target.value);
+//     };
+
+//     const [inputemailvalue, setInputEmailValue] = useState('');
+//     const mailhandleInputchange = (event) => {
+//         setInputEmailValue(event.target.value);
+//     };
+
+//     return(
+//         <>
+//         <p className="text-lg pt-2 pl-6">Form</p>
+//         <Input 
+//         place_holder={"Enter your first_name"}
+//         type={"text"}
+//         value={inputfirstvalue}
+//         onchange={firsthandleInputchange}
+//         />
+//         <Input
+//         place_holder={"Enter your last_name"}
+//         type={"text"}
+//         value={inputlastvalue}
+//         onchange={lasthandleInputchange}
+//         />
+//         <Input
+//         place_holder={"Enter your email"}
+//         type={"email"}
+//         value={inputemailvalue}
+//         onchange={mailhandleInputchange}
+//         />
+//         <Input
+//         place_holder={"Confirm your email"}
+//         type={"email"}
+//         value={inputemailvalue}
+//         onchange={mailhandleInputchange}
+//         />
+//         </>
+//     )
+// }
 
 
 
